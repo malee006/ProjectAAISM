@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AAISM Study Companion — ISACA Advanced in AI Security Management</title>
+<meta name="description" content="ADHD-friendly static study site for the ISACA AAISM certification exam.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header id="topbar">
+  <button id="sidebar-toggle" aria-label="Toggle table of contents">&#9776;</button>
+  <a class="brand" href="#/">AAISM<span> Study Companion</span></a>
+  <div class="topbar-tools">
+    <button id="focus-toggle" title="Focus mode: one concept at a time">Focus</button>
+    <button id="theme-toggle" title="Toggle dark / light theme">&#9790;</button>
+    <button id="search-toggle" title="Search glossary ( / )">&#128269;</button>
+  </div>
+</header>
+
+<div id="layout">
+  <nav id="sidebar" aria-label="Table of contents">
+    <div id="toc"></div>
+  </nav>
+
+  <main id="main" tabindex="-1">
+    <div id="view"></div>
+  </main>
+</div>
+
+<div id="search-overlay" hidden>
+  <div class="search-box">
+    <input id="search-input" type="search" placeholder="Search glossary & topics…" autocomplete="off">
+    <div id="search-results"></div>
+    <button id="search-close">Close (Esc)</button>
+  </div>
+</div>
+
+<script src="assets/js/data/d1.js"></script>
+<script src="assets/js/data/d2.js"></script>
+<script src="assets/js/data/d3.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
